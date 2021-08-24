@@ -23,15 +23,36 @@ export default {
     chart.setOption({
       xAxis: {
         type: 'category',
-        show: false
+        show: false,
+        // 取消默认距x轴的距离
+        boundaryGap: false
       },
       yAxis: {
         show: false
       },
       series: [{
         type: 'line',
-        data: [620, 432, 100, 200, 300, 512, 435]
-      }]
+        data: [620, 432, 220, 534, 709, 430, 220, 320, 532, 320, 834, 690, 530, 220, 620],
+        // 显示面积
+        areaStyle: {
+          color: 'purple'
+        },
+        lineStyle: {
+          width: 0
+        },
+        itemStyle: {
+          opacity: 0
+        },
+        // 平滑显示
+        smooth: true
+      }],
+      // 左右边距置为0
+      grid: {
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0
+      }
     })
   }
   /* methods: {
