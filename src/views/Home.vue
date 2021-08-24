@@ -2,8 +2,8 @@
   <div class="home">
     <top-view></top-view>
     <sales-view></sales-view>
-    <map-view></map-view>
     <bottom-view></bottom-view>
+    <map-view></map-view>
   </div>
 </template>
 
@@ -25,7 +25,6 @@ export default {
 <style>
 .home {
   width: 100%;
-  height: 100%;
   padding: 20px;
   background: #eee;
   box-sizing: border-box;
