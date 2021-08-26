@@ -1,7 +1,7 @@
 <template>
   <div class="map-view">
     <div class="left">
-      <b-map-scatter></b-map-scatter>
+      <b-map-scatter />
     </div>
     <div class="right">
       <el-card shadow="hover">
@@ -10,6 +10,7 @@
         </template>
         <template>
           <div class="chart-wrapper">
+            <liquid-fill />
           </div>
         </template>
       </el-card>
@@ -19,6 +20,7 @@
         </template>
         <template>
           <div class="chart-wrapper">
+            <word-cloud />
           </div>
         </template>
       </el-card>
@@ -28,9 +30,14 @@
 
 <script>
 import BMapScatter from '../BMapScatter/index.vue'
+import LiquidFill from '../LiquidFill/index.vue'
+import WordCloud from '../WordCloud/index.vue'
+
 export default {
   components: {
-    BMapScatter
+    BMapScatter,
+    LiquidFill,
+    WordCloud
   }
 }
 </script>
